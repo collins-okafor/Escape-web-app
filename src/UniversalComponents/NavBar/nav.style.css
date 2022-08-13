@@ -21,7 +21,11 @@
 a {
   color: #fff;
   text-decoration: none;
+  transition: all 0.5s;
   padding: 0px 20px;
+}
+a:hover {
+  transform: scale(1.5);
 }
 
 .brand {

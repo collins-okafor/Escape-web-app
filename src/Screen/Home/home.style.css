@@ -109,6 +109,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: transform 0.5s;
   width: 29vw;
   padding-left: 2%;
   height: 38vh;
@@ -117,7 +118,8 @@
   cursor: pointer;
 }
 .container:hover {
-  object-fit: contain;
+  transform: scale3d(1, 1.05, 1);
+  transform-style: preserve-3d;
 }
 
 .container h1 {
