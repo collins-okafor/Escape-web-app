@@ -1,4 +1,5 @@
 import React from "react";
+import CardSectionOne from "../../Components/Home/CardSectionOne/cardOne";
 import "./home.style.css";
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
       </div>
 
       {/* CARD AREA */}
+      <CardSectionOne />
     </div>
   );
 };

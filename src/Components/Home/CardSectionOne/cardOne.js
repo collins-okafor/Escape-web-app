@@ -1,11 +1,11 @@
 import React from "react";
 import Author from "../../../Asset/5e4b1929fccc7ff9f8de8335_128-14.jpg";
-import { cardDiv } from "./cardOne.styles";
+import { CardDiv } from "./cardOne.styles";
 
 const CardSectionOne = () => {
   return (
     <div>
-      <cardDiv>
+      <CardDiv>
         <div className="featured-post">
           <h3 className="fPost-title">Featured Posts</h3>
           <div class="card1">
@@ -26,7 +26,7 @@ const CardSectionOne = () => {
             </div>
           </div>
         </div>
-      </cardDiv>
+      </CardDiv>
     </div>
   );
 };
