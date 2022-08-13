@@ -1,0 +1,165 @@
+/* HERO AREA */
+.hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.479),
+      rgba(65, 33, 33, 0.292)
+    ),
+    url("../../Asset/5e4b1929fccc7fd4d0de82b2_photo-1439189741837-58720e8d82d5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 65vh;
+}
+
+.hero-text {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.footer-h1 {
+  font-size: 3rem;
+  padding-bottom: 0%;
+  font-weight: 400;
+  word-spacing: 10px;
+}
+
+.footer-p {
+  font-weight: 300;
+}
+
+.footer-btn {
+  border-radius: 3px;
+  width: 13em;
+  height: 3.5em;
+  background-color: rgb(207, 93, 62);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-btn:hover {
+  background-color: rgb(226, 56, 9);
+}
+
+.grid {
+  /* width: 100vw; */
+  margin: auto;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+}
+
+.grid-btn {
+  border-radius: 3px;
+  text-align: center;
+  width: 10em;
+  height: 3.5em;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.grid-btn:hover {
+  background-color: rgb(227, 227, 227);
+}
+
+/* CARD AREA */
+.cards {
+  height: 180vh;
+  background-color: rgb(227, 227, 227);
+  display: flex;
+  justify-content: center;
+}
+
+.fPost-title {
+  margin: auto;
+  width: fit-content;
+  display: flex;
+  font-weight: 380;
+  padding-bottom: 1%;
+  padding-top: 4%;
+  border-bottom: 1px solid rgb(187, 181, 181);
+}
+
+.card1 {
+  /* border: 1px solid red; */
+  width: 60vw;
+  display: flex;
+  padding: 20px 20px;
+  justify-content: space-between;
+  /* background-image: url("../../Asset/5e4b1929fccc7fb465de834a_photo-1443926818681-717d074a57af\ \(1\).jpg");
+  width */
+}
+
+.container {
+  /* border: 1px solid green; */
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.479),
+      rgba(65, 33, 33, 0.292)
+    ),
+    url("../../Asset/5e4b1929fccc7fb465de834a_photo-1443926818681-717d074a57af\ \(1\).jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 29vw;
+  padding-left: 2%;
+  height: 38vh;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container:hover {
+  object-fit: contain;
+}
+
+.container h1 {
+  margin-top: 20%;
+  font-weight: 350;
+}
+
+.container p {
+  /* margin-top: 20%; */
+  font-weight: 350;
+}
+.tag1 {
+  cursor: pointer;
+  /* border: 1px solid red; */
+  margin: 20px 0px 0px 0px;
+  background-color: rgb(172, 111, 172);
+  color: #fff;
+  height: 10%;
+  border: none;
+}
+
+.author {
+  display: flex;
+  /* justify-content: space-around; */
+  /* padding-left: 2%; */
+  gap: 0.5rem;
+  align-items: center;
+  /* border: 1px solid red; */
+  margin: 0px 0px 0px 0px;
+}
+
+.author img {
+  width: 6%;
+  border-radius: 50%;
+  margin: 0px 0px 0px 0px;
+}
+
+.author span {
+  font-weight: 350;
+}
+
+.container2 {
+  border: 1px solid green;
+  width: 29vw;
+}
