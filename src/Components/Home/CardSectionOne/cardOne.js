@@ -1,31 +1,48 @@
 import React from "react";
-import Author from "../../../Asset/5e4b1929fccc7ff9f8de8335_128-14.jpg";
+// import CardSectionOneArr from "../../../Utils/home.cardSectonOneArr";
 import { CardDiv } from "./cardOne.styles";
 
-const CardSectionOne = () => {
+const CardSectionOne = ({ arr }) => {
   return (
     <div>
       <CardDiv>
-        <div className="featured-post">
+        {arr.map((item, key) => (
+          <div key={key}>
+            <div class="container">
+              <button>{item.tag}</button>
+              <h1>{item.title}</h1>
+              <p>{item.excerpt}</p>
+              <div className="base">
+                <div className="author-detail">
+                  <img src={item.authorPicture} alt="#" />
+                  <span>{item.authorName}</span>
+                </div>
+                <div>
+                  <p>{item.date}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+        {/* <div>
           <h3 className="fPost-title">Featured Posts</h3>
           <div class="card1">
             <div class="container">
-              <button className="tag1">PHOTOGRAPHY</button>
+              <button className="tag">PHOTOGRAPHY</button>
               <h1>The Road Ahead</h1>
               <p>The road ahead might be paved - it might not be.</p>
-              <div className="author">
-                <img src={Author} alt="#" />
-                <span>Mat Vogels</span>
+              <div className="base">
+                <div className="author-detail">
+                  <img src={Author} alt="#" />
+                  <span>Mat Vogels</span>
+                </div>
+                <div>
+                  <p> September 25, 2015</p>
+                </div>
               </div>
             </div>
-            <div class="container2">
-              <h4>
-                <b>John Doe</b>
-              </h4>
-              <p>Architect & Engineer</p>
-            </div>
           </div>
-        </div>
+        </div> */}
       </CardDiv>
     </div>
   );
