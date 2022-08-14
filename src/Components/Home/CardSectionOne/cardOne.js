@@ -1,13 +1,12 @@
 import React from "react";
-// import CardSectionOneArr from "../../../Utils/home.cardSectonOneArr";
 import { CardDiv } from "./cardOne.styles";
 
 const CardSectionOne = ({ arr }) => {
   return (
     <div>
-      <CardDiv>
-        {arr.map((item, key) => (
-          <div key={key}>
+      {arr.map((item, key) => (
+        <div key={key}>
+          <CardDiv>
             <div class="container">
               <button>{item.tag}</button>
               <h1>{item.title}</h1>
@@ -22,28 +21,9 @@ const CardSectionOne = ({ arr }) => {
                 </div>
               </div>
             </div>
-          </div>
-        ))}
-        {/* <div>
-          <h3 className="fPost-title">Featured Posts</h3>
-          <div class="card1">
-            <div class="container">
-              <button className="tag">PHOTOGRAPHY</button>
-              <h1>The Road Ahead</h1>
-              <p>The road ahead might be paved - it might not be.</p>
-              <div className="base">
-                <div className="author-detail">
-                  <img src={Author} alt="#" />
-                  <span>Mat Vogels</span>
-                </div>
-                <div>
-                  <p> September 25, 2015</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-      </CardDiv>
+          </CardDiv>
+        </div>
+      ))}
     </div>
   );
 };

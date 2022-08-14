@@ -1,15 +1,15 @@
 import styled from "styled-components";
+import cardBg from "../../../Asset/5e4b1929fccc7f8ce9de833d_photo-1433854304641-67729357fe18.jpg";
 /* CARD AREA */
 
 export const CardDiv = styled.div`
   .container {
-    border: 1px solid pink;
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.479),
         rgba(65, 33, 33, 0.292)
       ),
-      url("../../../Asset/5e4b1929fccc7f5e3ede8340_photo-1441906363162-903afd0d3d52.jpg");
+      url(${cardBg});
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -34,7 +34,8 @@ export const CardDiv = styled.div`
   .container p {
     font-weight: 350;
   }
-  .tag {
+
+  button {
     cursor: pointer;
     margin: 20px 0px 0px 0px;
     background-color: rgb(172, 111, 172);
@@ -47,10 +48,8 @@ export const CardDiv = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
   }
   .author-detail {
-    border: 1px solid yellow;
     display: flex;
     gap: 0.5rem;
     align-items: center;
